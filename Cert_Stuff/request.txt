@@ -1,0 +1,18 @@
+[ req ]
+default_bits        = 2048
+distinguished_name  = req_distinguished_name
+req_extensions      = req_ext
+prompt  = no
+[ req_distinguished_name ]
+C   = <Country_Here>
+ST  = <State/Province_Here>
+L   = <Location_Here>
+O   = <Org_Name_Here>
+OU  = <OU_Name_Here>
+emailAddress    = <Email_Here - Otherwise Ommit This Line>
+CN  = <Commonname_of_Webserver>
+[ req_ext ]
+subjectAltName = @alt_names
+[ alt_names ]
+DNS.1 = <DNS_Name_Here>
+DNS.2 = <DNS_Name_Here>
